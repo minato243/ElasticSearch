@@ -1,5 +1,5 @@
 # ElasticSearch
-Client log tracking using Elasticsearch, Kibana, and Logstash
+Client log tracking using Elasticsearch, Kibana, and Logstash for games or apps.
 
 ![Iap](https://github.com/user-attachments/assets/596857b2-bdeb-4274-85b6-b8d82acc6f29)
 ![Rewarded](https://github.com/user-attachments/assets/64cec8f1-652b-4528-8c9b-fd4383d303f3)
@@ -35,7 +35,7 @@ curl https://artifacts.elastic.co/downloads/kibana/kibana-9.2.3-linux-x86_64.tar
 tar -xzf kibana-9.2.3-linux-x86_64.tar.gz
 cd kibana-9.2.3/
 ```
-In Elasticsearch home create crt and copy to kibana
+In Elasticsearch home, create a crt and copy it to Kibana
 ```ssh
 openssl pkcs12 -in config/certs/http.p12 -cacerts -nokeys -out http_ca.crt
 cp http_ca.crt ../kibana-9.2.3/config/certs/
